@@ -17,3 +17,5 @@ document.getElementById("main").innerHTML = "<h4>web application development</h4
 
 var x = document.getElementsByClassName("main")[0].innerHTML;
 alert(x);
+
+console.log("Helllo git commit from vs code");
