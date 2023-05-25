@@ -63,10 +63,39 @@ header.style.borderBottom = 'solid 3px #000';
 // GET ELEMENTS BY CLASS NAME
 
 
-var items = document.getElementsByClassName('title'); 
-console.log(items);
-console.log(items[0]);
-items[0].style.fontweight = 'bold';
-items[0].style.color  ='green';
+
+
+var items2 = document.getElementsByClassName('list-group-item'); 
+console.log(items2);
+console.log(items2[2]);
+items2[2].textContent='Hello 2';
+items2[2].style.fontWeight = 'bold';
+items2[2].style.backgroundColor = 'green';
+
+// for(var i=0; i<items.length; i++){
+//     items.style.fontWeight = 'bold';
+// }
+
+var items3 = document.getElementsByClassName('list-group-item'); 
+console.log(items3);
+console.log(items3[1]);
+items3[1].textContent='Hello';
+items3[1].style.fontWeight = 'bold';
+
+var items4 = document.getElementsByClassName('list-group-item'); 
+console.log(items4);
+console.log(items4[0]);
+items4[0].textContent='Hello';
+items4[0].style.fontWeight = 'bold';
+
+var items5 = document.getElementsByClassName('list-group-item'); 
+console.log(items5);
+console.log(items5[3]);
+items5[3].textContent='Hello';
+items5[3].style.fontWeight = 'bold';
+
+
+
+
 
 
