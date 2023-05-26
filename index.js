@@ -72,9 +72,9 @@ items2[2].textContent='Hello 2';
 items2[2].style.fontWeight = 'bold';
 items2[2].style.backgroundColor = 'green';
 
-// for(var i=0; i<items.length; i++){
-//     items.style.fontWeight = 'bold';
-// }
+for(var i=0; i<items.length; i++){
+    items.style.fontWeight = 'bold';
+}
 
 var items3 = document.getElementsByClassName('list-group-item'); 
 console.log(items3);
@@ -93,6 +93,30 @@ console.log(items5);
 console.log(items5[3]);
 items5[3].textContent='Hello';
 items5[3].style.fontWeight = 'bold';
+
+
+// GET ELEMENTS BY TAG NAME
+
+
+
+
+var newItem = document.createElement("li");
+newItem.textContent = "New Item";
+document.getElementById("items").appendChild(newItem);
+
+
+var li = document.getElementsByTagName('li'); 
+console.log(li[0]);
+console.log(li[0]);
+li[0].textContent='Hello 2';
+li[0].style.fontWeight = 'bold';
+li[0].style.backgroundColor = 'green';
+
+for(var i=0; li < li.length; i++){
+    li[i].style.fontWeight = 'bold';
+
+}
+
 
 
 
