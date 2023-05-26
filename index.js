@@ -100,22 +100,74 @@ items5[3].style.fontWeight = 'bold';
 
 
 
-var newItem = document.createElement("li");
-newItem.textContent = "New Item";
-document.getElementById("items").appendChild(newItem);
+// var newItem = document.createElement("li");
+// newItem.textContent = "New Item";
+// document.getElementById("items").appendChild(newItem);
 
 
-var li = document.getElementsByTagName('li'); 
-console.log(li[0]);
-console.log(li[0]);
-li[0].textContent='Hello 2';
-li[0].style.fontWeight = 'bold';
-li[0].style.backgroundColor = 'green';
+// var li = document.getElementsByTagName('li'); 
+// console.log(li[0]);
+// console.log(li[0]);
+// li[0].textContent='Hello 2';
+// li[0].style.fontWeight = 'bold';
+// li[0].style.backgroundColor = 'green';
 
-for(var i=0; li < li.length; i++){
-    li[i].style.fontWeight = 'bold';
+// for(var i=0; li < li.length; i++){
+//     li[i].style.fontWeight = 'bold';
 
+// }
+
+// QUERY SELECTOR //
+
+var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px #FF0000';
+
+var input = document.querySelector('input');
+input.value = 'Hello JavaScript!';
+
+var submit = document.querySelector('input[type="submit"]');
+submit.value = 'send';
+
+var item = document.querySelector('.list-group-item');
+item.style.color = 'red';
+
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'orange';
+
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
+
+// Select the third item using querySelector
+var thirdItem = document.querySelector('ul li:nth-child(3)');
+
+// Apply CSS style to make it invisible
+thirdItem.style.visibility = 'hidden';
+
+// Select all items in the list
+var itemList = document.querySelectorAll('ul li');
+
+// Check if there is a second item
+if (itemList.length >= 2) {
+  // Apply CSS style to make the second item's font color green
+  itemList[1].style.color = 'green';
 }
+
+
+
+
+// QUERY SELECTOR ALL //
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for (var i = 0; i < odd.length; i++) {
+    odd[i].style.background = "green";
+}
+
+
+
+
+
+
 
 
 
