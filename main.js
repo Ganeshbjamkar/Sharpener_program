@@ -398,6 +398,40 @@ function removeItem(e){
 
 
 
+  // LOcal Storage
+
+  // Get the form element
+// const form = document.getElementById("Form");
+
+// Add an event listener for the form submission
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from being submitted
+
+  // Get the user input values
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  // Create an object to store the user details
+  const userDetails = {
+    name: name,
+    email: email
+  };
+
+  // Convert the user details object to a string
+  const userDetailsString = JSON.stringify(userDetails);
+
+  // Store the user details in the local storage
+  localStorage.setItem("userDetails", userDetailsString);
+
+  // Display a success message
+  alert("User details saved!");
+
+  // Reset the form
+  form.reset();
+});
+
+
+
 
 
 
